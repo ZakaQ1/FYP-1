@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/detail_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_createplayer"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:scrollbarTrackVertical="@android:drawable/alert_dark_frame"
+                android:src="@drawable/person"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_floating_action_createplayer"
+                android:layout_width="60dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="-90dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/add_image" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:fontFamily="@font/lato_thin"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/edttxt_name_createplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:background="@drawable/edtxtborder"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_color"
+                        android:fontFamily="@font/lato_thin"
+                        android:hint="Enter Name"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_thin"
+                        android:text="Phone #:"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edttxt_phone_createplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/edtxtborder"
+                        android:fontFamily="@font/lato_thin"
+                        android:gravity="center"
+                        android:hint="Enter Phone"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="20sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Role: "
+                        android:fontFamily="@font/lato_thin"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/edttxt_role_createplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:background="@drawable/edtxtborder"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_color"
+                        android:fontFamily="@font/lato_thin"
+                        android:hint="Enter Role" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address: "
+                        android:fontFamily="@font/lato_thin"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edttxt_address_createplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:gravity="top|center"
+                        android:layout_marginLeft="30dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/edtxtborder"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_color"
+                        android:fontFamily="@font/lato_thin"
+                        android:hint="Enter Address" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Age: "
+                        android:fontFamily="@font/lato_thin"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edttxt_age_createplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/edtxtborder"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_color"
+                        android:fontFamily="@font/lato_thin"
+                        android:inputType="number"
+                        android:hint="Enter Age"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_edit_sample_addplayer"
+                android:background="@drawable/backgroundbox"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="Done"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato_thin"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btn_remove_sample_addplayer"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/lato_thin"
+                android:backgroundTint="@color/redish"
+                android:text="Back"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_seeplayer_crateplayer"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#A3A300"
+            android:text="See Players"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato_thin"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.n_template"
+    tools:ignore="CoarseFineLocation">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.N_Template">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Nearest_distance"
+            android:exported="true"
+            android:label="@string/title_activity_nearest_distance" />
+        <activity
+            android:name=".Join_Team_Age_Limits_list"
+            android:exported="false" />
+        <activity
+            android:name=".Join_by_Age"
+            android:exported="false" />
+        <activity
+            android:name=".Find_Nearest"
+            android:exported="true"
+            android:label="@string/title_activity_find_nearest" />
+        <activity
+            android:name=".Request"
+            android:exported="true" />
+        <activity
+            android:name=".View_team_for_joiners"
+            android:exported="true" />
+        <activity
+            android:name=".Otp_Verification"
+            android:exported="true" />
+        <activity
+            android:name=".Create_player"
+            android:exported="true" />
+        <activity
+            android:name=".Chat"
+            android:exported="true" />
+        <activity
+            android:name=".Challenges"
+            android:exported="true" />
+        <activity
+            android:name=".Challenge_map"
+            android:exported="true"
+            android:label="@string/title_activity_challenge_map" />
+        <activity
+            android:name=".My_Teams"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Ranking"
+            android:exported="true" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Join_Team_req_list"
+            android:exported="true" />
+        <activity
+            android:name=".View_team"
+            android:exported="true" />
+        <activity
+            android:name=".Team_list"
+            android:exported="true" />
+        <activity
+            android:name=".Detail_player"
+            android:exported="true" />
+        <activity
+            android:name=".Umpiring"
+            android:exported="true" />
+        <activity
+            android:name=".Add_player"
+            android:exported="true" />
+        <activity
+            android:name=".Set_Match"
+            android:exported="true" />
+        <activity
+            android:name=".Select_player"
+            android:exported="true" />
+        <activity
+            android:name=".Virtual_Umpiring"
+            android:exported="true" />
+        <activity
+            android:name=".Join_Team"
+            android:exported="true" />
+        <activity
+            android:name=".Create_Team"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.N_Template.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
